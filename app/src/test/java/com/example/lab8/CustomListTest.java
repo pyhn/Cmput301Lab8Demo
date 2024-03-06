@@ -52,4 +52,16 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize - 1);
     }
 
+    /**
+     * add city to list
+     * check if city is in list
+     */
+    @Test
+    public void testHasCity() {
+        list = MockCityList();
+        City city = new City("Regina", "Saskatchewan");
+        list.addCity(city);
+        assertTrue(list.hasCity(city));
+    }
+
 }
