@@ -72,5 +72,6 @@ public class CustomListTest {
         City city = new City("Regina", "Saskatchewan");
         list.add(city);
         Assert.assertEquals(2, list.getCount());
+        
     }
 }
